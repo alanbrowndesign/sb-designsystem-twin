@@ -1,12 +1,15 @@
 /** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
-const colors = require('tailwindcss/colors');
 
-// const plugin = require('tailwindcss/plugin');
+const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         slate: {
           1: 'var(--colors-slate1)',

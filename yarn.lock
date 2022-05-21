@@ -4211,6 +4211,13 @@ babel-plugin-syntax-jsx@^6.18.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
   integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
 
+babel-plugin-transform-stitches-display-name@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-stitches-display-name/-/babel-plugin-transform-stitches-display-name-0.0.1.tgz#df53cd9ee74ff169dcce76d6c2d9185b6fe334cb"
+  integrity sha512-2uluT1uvmdiVwBRXILAVHqXBsCnv6qJuTLt5Iz6UMz3OGCUwXJugiC1ZD2GbqFwdD283E8zHDkoCxm2DdtKwaA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+
 babel-plugin-twin@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-twin/-/babel-plugin-twin-1.0.2.tgz#7ed6622d2a6268fdb76cad414a1f2486df59dc96"

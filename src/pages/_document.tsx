@@ -23,7 +23,7 @@ class MyDocument extends Document {
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
           {/* Fonts */}
-          <link rel='stylesheet' href='https://use.typekit.net/tpz0wst.css' />
+          <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
         </Head>
         <body>
           <Main />
