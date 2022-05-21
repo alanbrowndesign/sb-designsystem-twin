@@ -1,0 +1,1 @@
+export { HeaderCentred } from './HeaderCentred';

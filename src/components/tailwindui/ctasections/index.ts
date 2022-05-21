@@ -1,0 +1,1 @@
+export { CtaSimple } from './CtaSimple';

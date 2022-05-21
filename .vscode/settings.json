@@ -1,0 +1,15 @@
+{
+  "css.validate": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "headwind.runOnSave": false,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#3E290F",
+    "titleBar.activeBackground": "#573A14",
+    "titleBar.inactiveBackground": "#573A14",
+    "titleBar.activeForeground": "#FDFAF7"
+  }
+}
