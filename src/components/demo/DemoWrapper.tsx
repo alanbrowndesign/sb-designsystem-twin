@@ -9,7 +9,7 @@ const StyledContainer = styled('div', {
 });
 
 const StyledDemoWrapper = styled('div', {
-  ...tw`bg-slate-1 p-4 lg:p-16 sm:rounded-lg relative`,
+  ...tw`bg-slate-1 p-4 lg:p-16 sm:pt-20 sm:rounded-lg relative`,
   border: '1px solid $slate5',
 });
 
@@ -60,7 +60,7 @@ const StyledLink = styled('a', {
 });
 
 const BackLink = styled('button', {
-  ...tw`lg:absolute left-4 top-4 w-6 h-6`,
+  ...tw`mb-6 sm:absolute sm:mb-0 left-4 top-4 w-6 h-6`,
   svg: {
     width: '100%',
     height: '100%',

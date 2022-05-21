@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app';
 import { localStyles } from '@/styles/globalStyles';
-// import { ThemeProvider } from 'next-themes';
+import { ThemeProvider } from 'next-themes';
 
 /**
  * !STARTERCONF info
@@ -9,7 +9,11 @@ import { localStyles } from '@/styles/globalStyles';
 
 function MyApp({ Component, pageProps }: AppProps) {
   localStyles();
-  return <Component {...pageProps} />;
+  return (
+    // <ThemeProvider attribute='class'>
+    <Component {...pageProps} />
+    // </ThemeProvider>
+  );
 }
 
 export default MyApp;
