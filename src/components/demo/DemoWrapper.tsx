@@ -9,8 +9,8 @@ const StyledContainer = styled('div', {
 });
 
 const StyledDemoWrapper = styled('div', {
-  ...tw`bg-slate-1 p-4 lg:p-16 sm:pt-20 sm:rounded-lg relative`,
-  border: '1px solid $slate5',
+  ...tw`bg-gray-50 lg:p-16 sm:pt-20 sm:rounded-lg relative`,
+  border: '1px solid $gray100',
 });
 
 const StyledTrigger = styled('button', {
@@ -39,7 +39,7 @@ const StyledNavMenu = styled('ul', {
       inline: {
         ...tw`flex width[auto] gap-4 flex-shrink-0 flex-wrap`,
         a: {
-          ...tw`bg-blue-700 text-white rounded-full px-4 hover:text-white whitespace-nowrap`,
+          ...tw`bg-primary-pink text-white rounded-full px-4 hover:text-white hover:bg-pink-600 whitespace-nowrap`,
         },
       },
     },
@@ -125,14 +125,14 @@ export const DemoWrapper = (props: any) => {
     <StyledContainer>
       <div tw='p-4 sm:p-0 flex justify-between'>
         <div tw=''>
-          <h1 tw='text-3xl font-bold'>
+          <h1 tw='text-hero text-primary-pink'>
             <Link href='/'>
               <a>Tailwind UI Demos</a>
             </Link>
           </h1>
           <div tw='text-xl'>
             <a
-              tw='text-blue-700 underline font-semibold'
+              tw='text-pink-700 underline font-semibold'
               href='https://tailwindcss.com/'
               target='_blank'
             >
@@ -140,7 +140,7 @@ export const DemoWrapper = (props: any) => {
             </a>{' '}
             +{' '}
             <a
-              tw='text-blue-700 underline font-semibold'
+              tw='text-pink-700 underline font-semibold'
               href='https://stitches.dev/'
               target='_blank'
             >
@@ -148,7 +148,7 @@ export const DemoWrapper = (props: any) => {
             </a>{' '}
             with{' '}
             <a
-              tw='text-blue-700 underline font-semibold'
+              tw='text-pink-700 underline font-semibold'
               href='https://github.com/ben-rogerson/twin.macro'
               target='_blank'
             >
