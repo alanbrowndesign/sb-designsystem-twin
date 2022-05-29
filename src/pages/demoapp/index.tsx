@@ -101,7 +101,7 @@ export default function DemoappPage() {
                   </div>
 
                   <div>
-                    <Link href='/'>
+                    <Link href='/demoapp/dashboard'>
                       <a
                         type='submit'
                         tw='cursor-pointer flex w-full justify-center rounded-md border border-transparent bg-primary-pink py-2 px-4 text-subhead text-white shadow-sm hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2'
