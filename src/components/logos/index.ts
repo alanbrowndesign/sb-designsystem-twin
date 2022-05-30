@@ -1,0 +1,1 @@
+export { ShawbrookLogo } from './ShawbrookLogo';

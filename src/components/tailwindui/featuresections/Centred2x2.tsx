@@ -11,25 +11,25 @@ const features = [
     name: 'Competitive exchange rates',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
+    icon: <GlobeAltIcon tw='h-6 w-6' aria-hidden='true' />,
   },
   {
     name: 'No hidden fees',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
+    icon: <ScaleIcon tw='h-6 w-6' aria-hidden='true' />,
   },
   {
     name: 'Transfers are instant',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: LightningBoltIcon,
+    icon: <LightningBoltIcon tw='h-6 w-6' aria-hidden='true' />,
   },
   {
     name: 'Mobile notifications',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: AnnotationIcon,
+    icon: <AnnotationIcon tw='h-6 w-6' aria-hidden='true' />,
   },
 ];
 
@@ -57,7 +57,7 @@ export const Centred2x2 = () => {
                 <div key={feature.name} tw='relative'>
                   <dt>
                     <div tw='absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white'>
-                      {/* <feature.icon tw='h-6 w-6' aria-hidden='true' /> */}
+                      <>{feature.icon}</>
                     </div>
                     <p tw='ml-16 text-lg font-medium leading-6 text-gray-900'>
                       {feature.name}

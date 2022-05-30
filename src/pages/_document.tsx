@@ -23,6 +23,62 @@ class MyDocument extends Document {
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
           {/* Fonts */}
+          <link
+            rel='preload'
+            href='/fonts/silka-regular-webfont.woff2'
+            as='font'
+            type='font/woff2'
+            crossOrigin='anonymous'
+          />
+          <link
+            rel='preload'
+            href='/fonts/silka-regularitalic-webfont.woff2'
+            as='font'
+            type='font/woff2'
+            crossOrigin='anonymous'
+          />
+          <link
+            rel='preload'
+            href='/fonts/silka-medium-webfont.woff2'
+            as='font'
+            type='font/woff2'
+            crossOrigin='anonymous'
+          />
+          <link
+            rel='preload'
+            href='/fonts/silka-mediumitalic-webfont.woff2'
+            as='font'
+            type='font/woff2'
+            crossOrigin='anonymous'
+          />
+          <link
+            rel='preload'
+            href='/fonts/silka-semibold-webfont.woff2'
+            as='font'
+            type='font/woff2'
+            crossOrigin='anonymous'
+          />
+          <link
+            rel='preload'
+            href='/fonts/silka-semibolditalic-webfont.woff2'
+            as='font'
+            type='font/woff2'
+            crossOrigin='anonymous'
+          />
+          <link
+            rel='preload'
+            href='/fonts/silka-bold-webfont.woff2'
+            as='font'
+            type='font/woff2'
+            crossOrigin='anonymous'
+          />
+          <link
+            rel='preload'
+            href='/fonts/silka-bolditalic-webfont.woff2'
+            as='font'
+            type='font/woff2'
+            crossOrigin='anonymous'
+          />
           <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
         </Head>
         <body>
