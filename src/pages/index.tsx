@@ -4,7 +4,7 @@ import { styled } from '@/styles/stitches.config';
 import Link from 'next/link';
 
 const StyledLink = styled('div', {
-  ...tw`block underline cursor-pointer text-secondary-pink-4 text-subhead mb-4`,
+  ...tw`flex gap-2 underline cursor-pointer text-secondary-pink-4 text-subhead mb-4`,
 });
 
 export default function HomePage() {
@@ -14,11 +14,22 @@ export default function HomePage() {
         <h1 tw='text-headline text-primary-pink mb-4'>
           Shawbrook Design System Demos
         </h1>
+        <Link href={'/demoapp'}>
+          <div tw='flex items-center gap-2 mb-4'>
+            <StyledLink
+              css={{
+                marginBottom: 0,
+              }}
+            >
+              Demo app{' '}
+            </StyledLink>
+            <div tw='width[fit-content] no-underline bg-secondary-blue-3 px-2 py-1 rounded text-decoration[none] text-white'>
+              new
+            </div>
+          </div>
+        </Link>
         <Link href={'/tailwindui'}>
           <StyledLink>Tailwind UI tests</StyledLink>
-        </Link>
-        <Link href={'/demoapp'}>
-          <StyledLink>Demo app</StyledLink>
         </Link>
       </div>
     </PageWrapper>
