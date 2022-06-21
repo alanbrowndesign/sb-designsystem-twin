@@ -126,16 +126,16 @@ export const { styled, css, theme, globalCss, config, keyframes, getCssText } =
         xs: '0.75rem', // 12px
         sm: '0.875rem', // 14px
         base: '1rem', // 16px
-        lg: '1.125rem', // 18px
-        xl: '1.25rem', // 20px
-        '2xl': '1.5rem', // 24px
-        '3xl': '1.875rem', // 30px
-        '4xl': '2.25rem', // 36px
-        '5xl': '3rem', // 48px
-        '6xl': '3.75rem', // 60px
-        '7xl': '4.5rem', // 72px
-        '8xl': '6rem', // 96px
-        '9xl': '8rem', // 128px
+        lg: 'clamp(1.13rem, calc(1.10rem + 0.13vw), 1.20rem)', // 18px
+        xl: 'clamp(1.27rem, calc(1.21rem + 0.29vw), 1.44rem)', // 20px
+        '2xl': 'clamp(1.42rem, calc(1.32rem + 0.51vw), 1.73rem)', // 24px
+        '3xl': 'clamp(1.60rem, calc(1.44rem + 0.79vw), 2.07rem)', // 30px
+        '4xl': 'clamp(1.80rem, calc(1.57rem + 1.14vw), 2.49rem)', // 36px
+        '5xl': 'clamp(2.03rem, calc(1.71rem + 1.60vw), 2.99rem)', // 48px
+        '6xl': 'clamp(2.28rem, calc(1.85rem + 2.17vw), 3.58rem)', // 60px
+        '7xl': 'clamp(2.57rem, calc(1.99rem + 2.89vw), 4.30rem)', // 72px
+        '8xl': 'clamp(2.89rem, calc(2.13rem + 3.79vw), 5.16rem)', // 96px
+        '9xl': 'clamp(3.25rem, calc(2.27rem + 4.91vw), 6.19rem)', // 128px
       },
       radii: {
         none: 0,
@@ -160,8 +160,9 @@ export const { styled, css, theme, globalCss, config, keyframes, getCssText } =
       },
       lineHeights: {
         none: '1',
-        tight: '1.1',
-        snug: '1.25',
+        tighter: '1.1',
+        tight: '1.25',
+        snug: '1.375',
         normal: '1.5',
         relaxed: '1.625',
         loose: '2',

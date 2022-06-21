@@ -6,6 +6,21 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    fontSize: {
+      xs: 'var(--fontSizes-xs)',
+      sm: 'var(--fontSizes-sm)',
+      base: 'var(--fontSizes-base)',
+      lg: 'var(--fontSizes-lg)',
+      xl: 'var(--fontSizes-xl)',
+      '2xl': 'var(--fontSizes-2xl)',
+      '3xl': 'var(--fontSizes-3xl)',
+      '4xl': 'var(--fontSizes-4xl)',
+      '5xl': 'var(--fontSizes-5xl)',
+      '6xl': 'var(--fontSizes-6xl)',
+      '7xl': 'var(--fontSizes-7xl)',
+      '8xl': 'var(--fontSizes-8xl)',
+      '9xl': 'var(--fontSizes-9xl)',
+    },
     fontFamily: {
       sans: 'var(--fonts-text)',
       text: 'var(--fonts-text)',
@@ -161,6 +176,7 @@ module.exports = {
       },
       lineHeight: {
         none: 'var(--lineHeights-none)',
+        tighter: 'var(--lineHeights-tighter)',
         tight: 'var(--lineHeights-tight)',
         snug: 'var(--lineHeights-snug)',
         normal: 'var(--lineHeights-normal)',
