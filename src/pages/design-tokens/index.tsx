@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 import { PageWrapper, ShawbrookLogo } from '@/components';
-import { styled, globalCss } from '@/styles/stitches.config';
+import { styled, globalCss, css } from '@/styles/stitches.config';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import Image from 'next/image';
@@ -34,21 +34,30 @@ const globalStyles = globalCss({
   },
 });
 
+const MyNewSwatch = styled('div', {
+  width: 100,
+  height: 100,
+  borderRadius: '9999rem',
+  border: '2px solid $gray500',
+});
+
 export default function DesignTokensPage() {
   globalStyles();
   return (
     <PageWrapper>
-      <StyleWrapper tw='bg-gray-300'>
+      <StyleWrapper tw=''>
         <Card tw='bg-white'>
-          <div tw=''>
-            <h1 tw='text-hero text-primary-pink'>Hello everyone</h1>
-            <p tw=''>This is a demo of design tokens!</p>
+          <div>
+            <h1 tw='text-hero'>Hello everyone</h1>
+            <div tw='flex'>
+              <p tw='text-headline'>This is a demo of design tokens!</p>
+            </div>
           </div>
           <SwatchRow>
-            <Swatch tw='bg-primary-gray' />
-            <Swatch tw='bg-primary-green' />
-            <Swatch tw='bg-primary-blue' />
             <Swatch tw='bg-primary-pink' />
+            <Swatch tw='bg-primary-green' />
+            <Swatch tw='' />
+            <Swatch tw='' />
           </SwatchRow>
         </Card>
       </StyleWrapper>
